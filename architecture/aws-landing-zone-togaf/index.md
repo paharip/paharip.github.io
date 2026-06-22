@@ -2,13 +2,36 @@
 
 ## Enterprise Architecture Reference Implementation
 
-This architecture series demonstrates how to design, govern, secure, and operate an Enterprise AWS Landing Zone using TOGAF principles and AWS best practices.
+Designing a secure, scalable, and governed AWS Landing Zone using TOGAF principles and AWS best practices.
 
-The objective is to establish a secure, scalable, and governed cloud foundation suitable for large enterprises and financial institutions.
+This architecture series demonstrates how Enterprise Architecture can be used to transform business strategy into a secure and operational AWS cloud platform suitable for large enterprises and financial institutions.
 
 ---
 
-## Architecture Overview
+## Architecture Journey
+
+```mermaid
+flowchart TD
+
+A[Business Drivers]
+--> B[Architecture Principles]
+
+B --> C[Business Capability Model]
+
+C --> D[AWS Landing Zone]
+
+D --> E[Security Architecture]
+D --> F[Network Architecture]
+D --> G[Identity Architecture]
+
+E --> H[Migration Roadmap]
+F --> H
+G --> H
+```
+
+---
+
+# Overview
 
 The architecture covers:
 
@@ -16,6 +39,7 @@ The architecture covers:
 * Enterprise Architecture Principles
 * Business Capability Mapping
 * AWS Organization Design
+* Landing Zone Design
 * Security Architecture
 * Network Architecture
 * Identity Architecture
@@ -25,89 +49,143 @@ The architecture covers:
 
 ---
 
-# Table of Contents
+# Architecture Series
 
-## Foundation
+## Phase 1 – Enterprise Foundation
 
-### Part 1 – Executive Summary
+### 📘 Part 1 – Executive Summary
 
-[Part 1 – Executive Summary](./01-executive-summary.md)
+[Read Part 1](./01-executive-summary.md)
 
-### Part 2 – Business Drivers
+### 🎯 Part 2 – Business Drivers
 
-[Part 2 – Business Drivers](./02-business-drivers.md)
+[Read Part 2](./02-business-drivers.md)
 
-### Part 3 – Enterprise Architecture Principles
+### 📐 Part 3 – Enterprise Architecture Principles
 
-[Part 3 – Enterprise Architecture Principles](./03-enterprise-architecture-principles.md)
+[Read Part 3](./03-enterprise-architecture-principles.md)
 
-### Part 4 – Business Capability Model
+### 🏢 Part 4 – Business Capability Model
 
-[Part 4 – Business Capability Model](./04-business-capability-model.md)
-
----
-
-## AWS Landing Zone Design
-
-### Part 5 – Target AWS Organization Structure
-
-[Part 5 – Target AWS Organization Structure](./05-target-aws-organization-structure.md)
-
-### Part 6 – Landing Zone Design Principles
-
-[Part 6 – Landing Zone Design Principles](./06-landing-zone-design-principles.md)
-
-### Part 7 – Architecture Decision Records
-
-[Part 7 – Architecture Decision Records](./07-architecture-decision-records.md)
-
-### Part 8 – Governance Model
-
-[Part 8 – Governance Model](./08-governance-model.md)
+[Read Part 4](./04-business-capability-model.md)
 
 ---
 
-## TOGAF Mapping
+## Phase 2 – AWS Landing Zone Design
 
-### Part 9 – TOGAF ADM Mapping to AWS Landing Zone
+### ☁️ Part 5 – Target AWS Organization Structure
 
-[Part 9 – TOGAF ADM Mapping](./09-togaf-adm-mapping.md)
+[Read Part 5](./05-target-aws-organization-structure.md)
 
----
+### 🏗️ Part 6 – Landing Zone Design Principles
 
-## Target Architecture
+[Read Part 6](./06-landing-zone-design-principles.md)
 
-### Part 10 – AWS Landing Zone Target Architecture
+### 📄 Part 7 – Architecture Decision Records
 
-[Part 10 – AWS Landing Zone Target Architecture](./10-aws-landing-zone-target-architecture.md)
+[Read Part 7](./07-architecture-decision-records.md)
 
-### Part 11 – Security Architecture
+### ⚖️ Part 8 – Governance Model
 
-[Part 11 – Security Architecture](./11-security-architecture.md)
-
-### Part 12 – Network Architecture
-
-[Part 12 – Network Architecture](./12-network-architecture.md)
-
-### Part 13 – Identity Architecture
-
-[Part 13 – Identity Architecture](./13-identity-architecture.md)
-
-### Part 14 – Platform Engineering
-
-[Part 14 – Platform Engineering](./14-platform-engineering.md)
+[Read Part 8](./08-governance-model.md)
 
 ---
 
-## Transformation
+## Phase 3 – TOGAF Architecture Mapping
 
-### Part 15 – Migration Roadmap
+### 🔄 Part 9 – TOGAF ADM Mapping to AWS Landing Zone
 
-[Part 15 – Migration Roadmap](./15-migration-roadmap.md)
+[Read Part 9](./09-togaf-adm-mapping.md)
 
-### Part 16 – Conclusion
+---
 
-[Part 16 – Conclusion](./16-conclusion.md)
+## Phase 4 – Target Architecture
+
+### 🏛️ Part 10 – AWS Landing Zone Target Architecture
+
+[Read Part 10](./10-aws-landing-zone-target-architecture.md)
+
+### 🔐 Part 11 – Security Architecture
+
+[Read Part 11](./11-security-architecture.md)
+
+### 🌐 Part 12 – Network Architecture
+
+[Read Part 12](./12-network-architecture.md)
+
+### 👤 Part 13 – Identity Architecture
+
+[Read Part 13](./13-identity-architecture.md)
+
+### 🚀 Part 14 – Platform Engineering
+
+[Read Part 14](./14-platform-engineering.md)
+
+---
+
+## Phase 5 – Transformation
+
+### 🛣️ Part 15 – Migration Roadmap
+
+[Read Part 15](./15-migration-roadmap.md)
+
+### 🎉 Part 16 – Conclusion
+
+[Read Part 16](./16-conclusion.md)
+
+---
+
+# Series Status
+
+| Section                   | Status         |
+| ------------------------- | -------------- |
+| Executive Summary         | ✅ Published    |
+| Business Drivers          | ✅ Published    |
+| Architecture Principles   | 🚧 In Progress |
+| Business Capability Model | ⏳ Planned      |
+| AWS Organization Design   | ⏳ Planned      |
+| Landing Zone Design       | ⏳ Planned      |
+| Governance                | ⏳ Planned      |
+| Security Architecture     | ⏳ Planned      |
+| Network Architecture      | ⏳ Planned      |
+| Identity Architecture     | ⏳ Planned      |
+| Platform Engineering      | ⏳ Planned      |
+| Migration Roadmap         | ⏳ Planned      |
+
+---
+
+# Technologies Covered
+
+## AWS Services
+
+* AWS Organizations
+* AWS Control Tower
+* IAM Identity Center
+* AWS Config
+* CloudTrail
+* Security Hub
+* GuardDuty
+* Transit Gateway
+* AWS Organizations SCP
+* EKS
+* Route53
+* Direct Connect
+
+## Engineering Practices
+
+* Infrastructure as Code
+* Terraform
+* GitOps
+* Platform Engineering
+* DevSecOps
+* Enterprise Governance
+
+## Architecture Frameworks
+
+* TOGAF
+* Architecture Decision Records (ADR)
+* Well-Architected Framework
+* Cloud Adoption Framework
 
 ---
 
@@ -119,25 +197,8 @@ This series is intended for:
 * Cloud Architects
 * Solution Architects
 * Platform Engineers
+* Engineering Managers
 * Technology Leaders
 * AWS Practitioners
-
----
-
-# Technologies Covered
-
-* AWS Organizations
-* Control Tower
-* IAM Identity Center
-* Transit Gateway
-* Security Hub
-* GuardDuty
-* CloudTrail
-* AWS Config
-* EKS
-* Terraform
-* GitOps
-* Platform Engineering
-* TOGAF
 
 ---
