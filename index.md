@@ -1,13 +1,17 @@
-About Me
+# Partha Pahari
 
-I currently work as a Principal Engineer, focusing on enterprise architecture, cloud transformation, platform engineering, and modern software delivery practices.
+Principal Engineer | Enterprise Architect
 
-My interests include:
+Welcome to my architecture portfolio.
 
-Enterprise Architecture
-AWS
-Kubernetes
-Platform Engineering
-Data Platforms
-AI & Machine Learning
-Technical Leadership
+## Architecture Portfolio
+
+- AWS Landing Zone using TOGAF
+- Platform Engineering
+- Security Architecture
+
+## Technology Areas
+
+- AWS
+- Kubernetes
+- Banking Technology
